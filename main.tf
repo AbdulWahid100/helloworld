@@ -2,15 +2,6 @@ provider "aws" {
   region = "eu-central-1"
 }
 
-resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-test-bucket"
-
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
-}
-
 # Create an EC2 instance
 resource "aws_instance" "hello-world" {
   ami           = "ami-06c39ed6b42908a36"
