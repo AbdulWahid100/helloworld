@@ -21,11 +21,3 @@ resource "aws_instance" "hello-world" {
     Name = "HelloWorld"
   }
 }
-resource "aws_instance" "another-hello-world" {
-  ami           = "ami-06c39ed6b42908a36"
-  instance_type = "t2.micro"
-  subnet_id="subnet-0b2cc8cfd58e5c754"
-    tags = {
-    Name = "AnotherHelloWorld"
-  }
-}
