@@ -9,15 +9,7 @@ provider "aws" {
 resource "aws_instance" "hello-world" {
   ami           = "ami-06c39ed6b42908a36"
   instance_type = "t2.micro"
-  subnet_id="subnet-0b2cc8cfd58e5c754"
-    tags = {
-    Name = "HelloWorld"
-  }
-}
-resource "aws_instance" "hello-world-another" {
-  ami           = "ami-06c39ed6b42908a36"
-  instance_type = "t2.micro"
-  subnet_id="subnet-0b2cc8cfd58e5c754"
+  subnet_id="subnet-08255b17ebb2c8a9b"
     tags = {
     Name = "HelloWorld"
   }
