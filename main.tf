@@ -11,12 +11,3 @@ resource "aws_instance" "hello-world" {
     Name = "HelloWorld"
   }
 }
-
-resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-test-bucket-for-agents"
-
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
-}
